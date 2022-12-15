@@ -1,7 +1,220 @@
+/* fixed background */
 html { 
     background: url(images/hero-bg.jpg.webp) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+  
+  div{
+    margin:0;
+    padding:0;
+  }
+  
+  /* -----section styling -------*/
+  .s-home {
+    width: 100%;
+    height: 100%;
+    min-height: 786px;
+    background-color: transparent;
+    position: relative;
+    display: table;
+  }
+  
+  .s-home .shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+  }
+  
+  .s-home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: #000000;
+  }
+  
+  /* ------- home content ------*/
+  .home {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    padding-bottom: 15.6rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .row {
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-content__main {
+    padding-top: 21rem;
+    padding-right: 80px;
+    max-width: 680px;
+    position: relative;
+  }
+  
+  .home-title h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 6.3rem;
+    line-height: 1.333;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+    color: #FFFFFF;
+  }
+  
+  /* ----- rescale home content based on window size ------- */
+   @media only screen and (max-width: 1500px) {
+    .home-content h1 {
+        font-size: 6rem;
+    }
+    .home-content__main {
+        max-width: 1000px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .home-content h1 {
+        font-size: 5.5rem;
+    }
+    .home-content__main {
+        max-width: 800px;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .home-content h1 {
+        font-size: 4.6rem;
+    }
+    .home-content br {
+        display: none;
+    }
+    .home-content__main {
+        padding-top: 21rem;
+        padding-right: 80px;
+        max-width: 680px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content__main {
+        padding-right: 70px;
+        max-width: 550px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .home-content__main {
+        max-width: 490px;
+    }
+    .home-content__buttons {
+        padding-top: 1.2rem;
+        text-align: center;
+    }
+    .home-content__buttons .btn {
+        display: block;
+        width: 70%;
+        margin: 1.5rem 0 0 0;
+    }
+    .home-social {
+        right: 4rem;
+    }
+    .home-content__scroll {
+        right: 7.5rem;
+    }
+    .home-content__line {
+        right: 5.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+    .home-social {
+        right: 2rem;
+    }
+    .home-social li {
+        padding: .6rem 0;
+    }
+    .home-social i {
+        font-size: 17px;
+        border: none;
+    }
+    .home-social span {
+        display: none;
+    }
+    .home-content__scroll {
+        bottom: 5.4rem;
+    }
+    .home-content__line {
+        height: 7.2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .s-home {
+        min-height: 642px;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content__main {
+        text-align: center;
+        max-width: none;
+        padding-top: 15rem;
+        padding-right: 25px;
+        width: 85%;
+    }
+    .home-content__buttons {
+        padding-top: 1.2rem;
+    }
+    .home-content__buttons .btn {
+        width: auto;
+        margin: 1.5rem 0 0 0;
+    }
+    .home-social {
+        display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .home-content h1 {
+        font-size: 3.3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .s-home {
+        min-height: 630px;
+    }
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+    .home-content__main {
+        padding-top: 16.2rem;
+        width: auto;
+    }
   }
