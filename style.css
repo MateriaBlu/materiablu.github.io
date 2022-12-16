@@ -57,6 +57,29 @@ html {
     margin: 0;
   }
   
+  .home-social li {
+    position: absolute;
+    list-style: none;
+    top: 50%;
+    right: 5.4rem;
+  }
+  
+  .home-social i {
+    font-size: 14px;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: calc(33px - 4px);
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+      top: 0;
+      line-height: 33px;
+      color: #FFFFFF;
+  }
+  
   .row {
     width: 94%;
     max-width: 1200px;
